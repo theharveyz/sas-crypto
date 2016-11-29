@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "spaced-comment": [
+      0,
+      "always"
+    ]
+  }
+}

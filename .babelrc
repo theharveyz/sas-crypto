@@ -1,0 +1,13 @@
+{
+  "presets": ["stage-3", "es2015-node4"],
+  "plugins": [
+      ["babel-plugin-transform-builtin-extend", {
+          globals: ["Error"]
+      }]
+  ],
+  "env": {
+  	"test": {
+  	  "plugins": ["istanbul"]
+  	}
+  }
+}
