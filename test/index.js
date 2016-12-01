@@ -26,7 +26,10 @@ test('private key encrypt, public key decrypt', t => {
 });
 
 test('public key encrypt, private key decrypt', t => {
-  const encryptedData = sas.key(publicKey, 'public').encrypt(data);
-  t.is(sas.key(privateKey, 'private').decrypt(encryptedData), data);
+  sas.key(publicKey, 'public');
+  const encryptedData = sas.encrypt(data);
+
+  sas.key(privateKey, 'private');
+  t.is(sas.decrypt(encryptedData), data);
 });
 

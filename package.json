@@ -1,5 +1,5 @@
 {
-  "name": "node-sas",
+  "name": "sas-crypto",
   "version": "0.1.0",
   "description": "Data encryption package",
   "main": "lib/index.js",
@@ -13,19 +13,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ZhangHarvey/sas.git"
+    "url": "git@github.com:ZhangHarvey/sas-crypto.git"
   },
   "keywords": [
-    "sas",
+    "sas-crypto",
     "encryption",
     "ES6"
   ],
   "author": "geekwebme@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ZhangHarvey/sas/issues"
+    "url": "https://github.com/ZhangHarvey/sas-crypto/issues"
   },
-  "homepage": "https://github.com/ZhangHarvey/sas",
+  "homepage": "https://github.com/ZhangHarvey/sas-crypto",
   "engines": {
     "node": ">=4.4.3"
   },
@@ -54,11 +54,8 @@
       "src/**/*.js"
     ],
     "require": [
-      "babel-register",
-      "babel-polyfill"
-    ],
-    "sourceMap": false,
-    "instrument": false
+      "babel-register"
+    ]
   },
   "ava": {
     "files": [
@@ -73,11 +70,6 @@
     "require": [
       "babel-register",
       "babel-polyfill"
-    ],
-    "reporter": [
-      "lcov",
-      "text",
-      "html"
     ],
     "babel": "inherit"
   }

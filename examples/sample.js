@@ -1,4 +1,4 @@
-import SAS from 'sas';
+import SAS from 'sas-crypto';
 
 const sas = new SAS();
 const data = 'hello';
