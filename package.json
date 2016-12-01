@@ -1,14 +1,15 @@
 {
-  "name": "sas",
+  "name": "node-sas",
   "version": "0.1.0",
   "description": "Data encryption package",
   "main": "lib/index.js",
   "scripts": {
+    "pretest": "npm run build",
+    "prepublish": "npm run build",
     "ava": "node --harmony ./node_modules/.bin/ava --verbose --serial",
     "test": "./node_modules/.bin/nyc -a --reporter=text --reporter=lcov  --reporter=html npm run ava",
     "build": "babel src -d lib",
-    "lint": "eslint ./src/**/*.js",
-    "prepublish": "npm run build"
+    "lint": "eslint ./src/**/*.js"
   },
   "repository": {
     "type": "git",

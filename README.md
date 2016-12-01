@@ -1,5 +1,6 @@
-# sas
-
+# sas-crypto
+[![Build Status](https://travis-ci.org/ZhangHarvey/sas.svg?branch=master)](https://travis-ci.org/ZhangHarvey/sas)
+[![Coverage Status](https://coveralls.io/repos/github/ZhangHarvey/sas/badge.svg?branch=master)](https://coveralls.io/github/ZhangHarvey/sas?branch=master)
 非对称与对称加密结合使用的加密工具。
 
 ## 特点
