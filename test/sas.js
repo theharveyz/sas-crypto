@@ -16,8 +16,9 @@ test('random hash aes key length should be 64', t => {
 
 test('specify key', t => {
   const str = privateKey.toString('utf8');
+  const rsakey = sas.key(str).rsakey;
   t.true(typeof(str) === 'string');
-  t.true(ursa.isPrivateKey(sas.key(str).rsakey));
+  t.true(ursa.isPrivateKey(rsakey));
 });
 
 test('private key encrypt, public key decrypt', t => {
