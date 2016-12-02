@@ -7,7 +7,7 @@
     "pretest": "npm run build",
     "prepublish": "npm run build",
     "ava": "node --harmony ./node_modules/.bin/ava --verbose --serial",
-    "test": "NODE_ENV=test ./node_modules/.bin/nyc -a --reporter=text --reporter=lcov  --reporter=html npm run ava",
+    "test": "NODE_ENV=test ./node_modules/.bin/nyc -a --reporter=text --reporter=text-lcov --reporter=lcov  --reporter=html npm run ava",
     "build": "babel src -d lib",
     "lint": "eslint ./src/**/*.js"
   },
