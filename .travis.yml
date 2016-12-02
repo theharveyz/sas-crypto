@@ -1,8 +1,10 @@
 language: node_js
 node_js:
   - "4.6.1"
+before_script:
+  - "gcc -v"
 script:
-    - "npm run lint"
-    - "npm test"
+  - "npm run lint"
+  - "npm test"
 after_success:
-    - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
+  - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
