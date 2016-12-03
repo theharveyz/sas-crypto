@@ -13,4 +13,6 @@ script:
   - "npm run lint"
   - "npm test"
 after_success:
+  - "./node_modules/.bin/nyc report --reporter=lcov"
   - bash <(curl -s https://codecov.io/bash)
+  
