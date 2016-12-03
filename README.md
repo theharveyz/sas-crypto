@@ -1,6 +1,6 @@
 # sas-crypto
 [![npm version](https://badge.fury.io/js/sas-crypto.svg)](https://badge.fury.io/js/sas-crypto)
-[![Build Status](https://travis-ci.org/ZhangHarvey/sas-crypto.svg?branch=master)](https://travis-ci.org/ZhangHarvey/sas-crypto)
+[![CircleCI](https://circleci.com/gh/ZhangHarvey/sas-crypto.svg?style=svg)](https://circleci.com/gh/ZhangHarvey/sas-crypto)
 [![codecov](https://codecov.io/gh/ZhangHarvey/sas-crypto/branch/master/graph/badge.svg)](https://codecov.io/gh/ZhangHarvey/sas-crypto)
 
 非对称与对称加密结合使用的加密工具。
