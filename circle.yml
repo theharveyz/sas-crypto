@@ -7,4 +7,5 @@ test:
     - npm install
     - npm run lint
   post:
+    - ./node_modules/.bin/nyc report --reporter=text-lcov > ./coverage/lcov.info
     - bash <(curl -s https://codecov.io/bash)
