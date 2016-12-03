@@ -7,10 +7,9 @@
     "pretest": "npm run build",
     "prepublish": "rm -rf ./lib/ && npm run build",
     "ava": "LOG_LEVEL=error NODE_ENV=test ./node_modules/.bin/ava --verbose --serial",
-    "test": "./node_modules/.bin/nyc -a --reporter=text --reporter=html npm run ava",
+    "test": "./node_modules/.bin/nyc -a --reporter=text --reporter=lcov --reporter=html npm run ava",
     "build": "babel src -d lib",
-    "lint": "eslint ./src/**/*.js",
-    "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov"
+    "lint": "eslint ./src/**/*.js"
   },
   "repository": {
     "type": "git",
