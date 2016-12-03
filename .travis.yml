@@ -13,4 +13,4 @@ script:
   - "npm run lint"
   - "npm test"
 after_success:
-  # - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
+  # - 'NODE_ENV=test ./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
